@@ -1,0 +1,92 @@
+@font-face {
+    font-family: Persona;
+    src: url(fonts/persona.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: persona;
+    line-height: 1.6;
+    color: #e0e0e0; /* Gris très clair pour le texte, moins agressif que le blanc pur */
+    background-color: #121212; /* Fond sombre profond */
+}
+
+nav {
+    background-color: #1f1f1f; /* Un peu plus clair que le body pour créer du relief */
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+    border-bottom: 1px solid #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+nav a {
+    color: #70b5f9; /* Bleu clair pour bien ressortir sur le noir */
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(112, 181, 249, 0.6);
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    min-height: calc(100vh - 160px);
+}
+
+section {
+    margin-bottom: 1.5rem;
+    padding: 2rem;
+    background-color: #1e1e1e; /* Couleur "carte" Dark Mode */
+    border-radius: 10px;
+    border: 1px solid #333; /* Bordure discrète */
+}
+
+h1 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+h2 {
+    color: #70b5f9;
+    margin-bottom: 0.8rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+footer {
+    background-color: #121212;
+    color: #888;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+}
+
+.social-links a {
+   text-justify: left;
+}
+
+main p {
+    margin-bottom: 1rem;
+}

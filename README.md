@@ -18,6 +18,6 @@ Pour ce projet, j'ai utilisé les technologies web fondamentales afin d'assurer 
 .
 ├── index.html        # Page principale du portfolio
 ├── style.css         # Fichier de styles (si séparé)
-├── images/           # Dossier contenant les images et logos
+├── medias/           # Dossier contenant les images, vidéos ETC...
 ├── projets/          # Dossier ou se trouve les page HTML des projets
 └── README.md         # Documentation du projet

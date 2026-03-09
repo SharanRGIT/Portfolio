@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Serveur Minecraft - Portfolio Sharan RAMANE</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <main>
+        <section class="project-section">
+            <h1>Projet Serveur Minecraft Auto-hébergé</h1>
+
+            <h2>Présentation du Projet</h2>
+            <p>
+                Dans le cadre de mes projets personnels en administration système et réseaux, j'ai transformé un ancien ordinateur en un serveur Minecraft dédié, capable de fonctionner 24h/24 et 7j/7.
+            </p>
+            <p>
+                L'objectif était de créer une solution <strong>performante, économique en énergie et 100% contrôlable à distance</strong>, afin d'héberger des parties multijoueurs (jusqu'à 5 joueurs sur des modpacks) sans dépendre d'un hébergeur cloud payant.
+            </p>
+            <p>
+                Ce projet a nécessité la mise en place d'une architecture "Headless" (sans écran ni périphériques), gérée entièrement en ligne de commande via le réseau local.
+            </p>
+        </section>
+
+        <section>
+            <h2>Architecture Technique et Matériel</h2>
+            <p>
+                Afin d'optimiser les ressources et réduire la consommation électrique (estimée à environ 30 Watts en moyenne), le système a été allégé au maximum, tant sur le plan matériel que logiciel.
+            </p>
+
+            <h3>Liste des Équipements (Hardware)</h3>
+            <div class="hardware-list">
+                <ul>
+                    <li><strong>Hôte :</strong> PC avec processeur Intel Core i7 (optimisé pour les calculs monocœur requis par le jeu).</li>
+                    <li><strong>Stockage & Mémoire :</strong> Disque SSD pour la génération rapide des "chunks" et 4 à 8 Go de RAM dédiés au serveur.</li>
+                    <li><strong>Réseau :</strong> Connexion filaire Ethernet directe à la box internet pour garantir un ping stable et éviter les pertes de paquets du Wi-Fi.</li>
+                </ul>
+            </div>
+
+            <h3>Stack Logicielle (Software)</h3>
+            <div class="software-list">
+                <ul>
+                    <li><strong>Système d'exploitation :</strong> Ubuntu (Linux) installé via clé USB bootable (configuration de l'EFI et désactivation du Secure Boot).</li>
+                    <li><strong>Contrôle à distance :</strong> Protocole SSH pour la gestion du serveur depuis n'importe quel terminal du réseau local.</li>
+                    <li><strong>Serveur Minecraft :</strong> Version Java Edition,
+                <ul>
+            
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h2>Réalisation et Mise en Place</h2>
+            <h3>1. Le Défi de l'Alimentation (Sécurité)</h3>
+            <p>
+                L'un des principaux défis a été de garantir une alimentation stable et sécurisée pour le serveur, tout en minimisant les risques de surchauffe. En enlevant la batterie vu que le PC est destiné à être utilisé en mode "Headless", j'ai réduit les risques d'incendie liés à une batterie gonflé à cause de la charge secteur. De plus, j'ai configuré le BIOS pour démarrer automatiquement en cas de coupure de courant, assurant ainsi une disponibilité maximale du serveur.</p>
+            <h3>2. Installation et Configuration du Système d'Exploitation</h3>
+            <p>
+                Après avoir installé Ubuntu, j'ai configuré le réseau pour permettre l'accès SSH à distance. J'ai également mis en place des règles de pare-feu pour sécuriser les connexions entrantes et sortantes, ainsi que des scripts de surveillance pour alerter en cas de problèmes de performance ou de sécurité.</p>
+            <h3>3. Installation du Serveur Minecraft</h3>
+            <p>
+                J'ai téléchargé la dernière version du serveur Minecraft Java Edition depuis le site officiel, et j'ai configuré les paramètres du serveur (comme la quantité de RAM allouée, les règles de jeu, et les plugins nécessaires pour le jeu
+multijoueur). J'ai également mis en place des sauvegardes régulières pour éviter toute perte de données en cas de crash ou de corruption du monde.</p>      
+           <h3>4. Performance et Optimisation</h3>
+              <p>
+                 Grâce à l'optimisation du matériel et du logiciel, le serveur est capable de gérer jusqu'à 5 joueurs simultanément sur des modpacks sans rencontrer de problèmes de lag ou de performance. J'ai également configuré des outils de monitoring pour suivre l'utilisation des ressources en temps réel et ajuster les paramètres du serveur si nécessaire.</p>
+        </section>
+        <section>
+            <h2>Capture d'Écran</h2>   
+            <figure>
+                <img src="../medias/ssh1.png" alt="Capture d'écran de la connection au serveur SSH">
+                <figcaption>Figure 1 : Capture d'écran du serveur Minecraft en action avec plusieurs joueurs connectés.</figcaption>
+            </figure>
+        </section>
+                    <div class="container-bouton">
+                <button class="bouton style" type="button">
+                    <a href="../index.html">Retourner à la page principale</a>
+                </button>
+            </div>
+        </section>
+        <footer>
+        <p>&copy; 2026 Mon Portfolio BTS CIEL - Tous droits réservés</p>
+        <div class="social-links">
+        </footer>
+</body>
+</html>

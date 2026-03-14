@@ -42,7 +42,7 @@
             <h3>Stack Logicielle (Software)</h3>
             <div class="software-list">
                 <ul>
-                    <li><strong>Système d'exploitation :</strong> Ubuntu (Linux) installé via clé USB bootable (configuration de l'EFI et désactivation du Secure Boot).</li>
+                    <li><strong>Système d'exploitation :</strong> Ubuntu Serveur (Linux) installé via clé USB bootable (configuration de l'EFI et désactivation du Secure Boot).</li>
                     <li><strong>Contrôle à distance :</strong> Protocole SSH pour la gestion du serveur depuis n'importe quel terminal du réseau local.</li>
                     <li><strong>Serveur Minecraft :</strong> Version Java Edition,
                 <ul>
@@ -57,12 +57,16 @@
                 L'un des principaux défis a été de garantir une alimentation stable et sécurisée pour le serveur, tout en minimisant les risques de surchauffe. En enlevant la batterie vu que le PC est destiné à être utilisé en mode "Headless", j'ai réduit les risques d'incendie liés à une batterie gonflé à cause de la charge secteur. De plus, j'ai configuré le BIOS pour démarrer automatiquement en cas de coupure de courant, assurant ainsi une disponibilité maximale du serveur.</p>
             <h3>2. Installation et Configuration du Système d'Exploitation</h3>
             <p>
-                Après avoir installé Ubuntu, j'ai configuré le réseau pour permettre l'accès SSH à distance. J'ai également mis en place des règles de pare-feu pour sécuriser les connexions entrantes et sortantes, ainsi que des scripts de surveillance pour alerter en cas de problèmes de performance ou de sécurité.</p>
-            <h3>3. Installation du Serveur Minecraft</h3>
+                Après avoir installé Ubuntu Serveur, j'ai configuré le réseau pour permettre l'accès SSH à distance. J'ai également mis en place des règles de pare-feu pour sécuriser les connexions entrantes et sortantes, ainsi que des scripts de surveillance pour alerter en cas de problèmes de performance ou de sécurité.</p>
+            <h3>3. Installation des Dépendances et Configuration du Serveur</h3>
+            <p>Pour vraiment assurer le bon fonctionnement du serveur, j'ai installé les dépendances nécessaires et configuré les paramètres du serveur. De plus j'ai aussi ajouté un accès à distance pour faciliter la gestion du serveur via SFTP et tailscale.</p>
             <p>
                 J'ai téléchargé la dernière version du serveur Minecraft Java Edition depuis le site officiel, et j'ai configuré les paramètres du serveur (comme la quantité de RAM allouée, les règles de jeu, et les plugins nécessaires pour le jeu
-multijoueur). J'ai également mis en place des sauvegardes régulières pour éviter toute perte de données en cas de crash ou de corruption du monde.</p>      
+multijoueur). J'ai également mis en place des sauvegardes régulières pour éviter toute perte de données en cas de crash ou de corruption du monde.</p>
+
+                <p>Pour éviter tout problème, de changement d'IP local j'ai configuré une adresse IP statique. Directement sur le panel de mon FAI</p>
            <h3>4. Performance et Optimisation</h3>
+           <p> Après avoir mis toutes les configurations en place, j'ai effectué des tests de performance pour s'assurer que le serveur fonctionne correctement sous charge. à l'aide de "Cockpit" un logiciel de monitoring pour linux</p>
               <p>
                  Grâce à l'optimisation du matériel et du logiciel, le serveur est capable de gérer jusqu'à 5 joueurs simultanément sur des modpacks sans rencontrer de problèmes de lag ou de performance. J'ai également configuré des outils de monitoring pour suivre l'utilisation des ressources en temps réel et ajuster les paramètres du serveur si nécessaire.</p>
         </section>
@@ -70,8 +74,15 @@ multijoueur). J'ai également mis en place des sauvegardes régulières pour év
             <h2>Capture d'Écran</h2>   
             <figure>
                 <img src="../medias/ssh1.png" alt="Capture d'écran de la connection au serveur SSH">
-                <figcaption>Figure 1 : Capture d'écran du serveur Minecraft en action avec plusieurs joueurs connectés.</figcaption>
+                <figcaption>Figure 1 : Connection au serveur SSH.</figcaption>
             </figure>
+            <figure>
+                <img src="../medias/serveur1.png" alt="Capture d'écran de comment j'ai autorisé certain port à communiquer avec le serveur">
+                <figcaption>Figure 2 : Configuration du pare-feu pour le serveur.</figcaption>
+            </figure> 
+            <figure>
+                <img src="../medias/SFTP.png" alt="Capture d'écran de la configuration de l'accès à distance au serveur via SFTP">
+                <figcaption>Figure 3 : Configuration de l'accès à distance au serveur via SFTP.</figcaption> 
         </section>
                     <div class="container-bouton">
                 <button class="bouton style" type="button">
